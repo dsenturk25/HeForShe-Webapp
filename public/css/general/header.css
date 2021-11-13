@@ -1,0 +1,320 @@
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.all-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.all-header-wrapper {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 15px;
+  border-bottom: 3px solid #D80058;
+}
+
+.header-wrapper-lower {
+  width: 100%;
+  height: 100px;
+  border-bottom: 3px solid #D80058;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-wrapper-lower span {
+  width: 4px;
+  border-radius: 4px;
+  height: 80px;
+  background-color: black;
+  margin: 0 20px;
+}
+
+.each-menu-item {
+  font-family: "manrope";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.each-menu-item:hover {
+  color: #D80058;
+}
+
+.heforshe-main-logo {
+  width: 234px;
+  height: 54px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../res/header_logo_heforshe.png");
+}
+
+.uaa-logo {
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../res/uaalogo.png");
+  margin-left: 20px;
+}
+
+.header-wrapper-left-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper-right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.un-logo {
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../res/unlogo.png");
+  margin-top: 10px;
+}
+.sdg-logo {
+  width: 95px;
+  height: 95px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../res/sdglogo.png");
+  margin-right: 20px;
+}
+
+.all-footer-wrapper {
+  width: 100%;
+  height: 700px;
+  background-color: #FFE4EF;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wrapper-upper {
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  display: flex;
+}
+
+.footer-wrapper-lower {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 100px;
+  padding: 0 0 10px 0;
+}
+
+.slogan-text {
+  margin-right: 15px;
+}
+
+.slogan-text span {
+  font-size: 35px;
+  font-family: "manrope";
+  font-weight: bold;
+}
+
+.copyright-text {
+  font-size: 28px;
+  font-family: "manrope";
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.heforshe-main-description {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 55px;
+  margin-left: 50px;
+}
+
+.heforshe-main-description div {
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.heforshe-main-description font {
+  color: rgba(0, 0, 0);
+}
+
+.foundation-goals {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.each-foundation-goal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.each-foundation-goal span {
+  color: #D80058;
+  font-size: 28px;
+  font-weight: 900;
+  font-family: "manrope";
+}
+
+.each-foundation-goal a, .each-foundation-goal div {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+
+  color: rgba(0, 0, 0, 0.69);
+}
+
+.foundation-goals-title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.footer-upper-second {
+  width: 33%;
+  height: 100%;
+  padding: 30px 50px;
+  margin-left: 75px;
+}
+
+
+.footer-upper-third {
+  width: 40%;
+  height: 100%;
+  margin-left: 30px;
+  margin-right: 10px;
+  padding: 30px 0;
+}
+
+.account-title-cluster {
+  display: flex;
+  align-items: center;
+}
+
+.each-contact-subcluster {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+
+.each-contact-subcluster span {
+  color: #D80058;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.each-contact-subcluster a, .each-contact-subcluster div {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+
+  color: rgba(0, 0, 0, 0.69);
+}
+
+.account-names-heforshe {
+  margin-top: 10px;
+}
+
+.account-names-heforshe a {
+  margin-left: 30px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.language-switch-section {
+  width: 75px;
+  height: 45px;
+  background: #FFE4EF;
+  border: 1px solid #D80058;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.english-switch-option, .turkish-switch-option {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  background: #FFE4EF;
+  border: 1px solid #D80058;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.english-switch-option:hover, .turkish-switch-option:hover {
+  background-color: #ee4b8c;
+}

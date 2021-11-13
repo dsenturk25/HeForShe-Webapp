@@ -1,0 +1,107 @@
+doctype html
+html(lang="en")
+  head
+    if meta
+        meta(name="description" content="Üsküdar Amerikan Lisesi HeForShe Kulübü Resmî web sayfasıdır. Tüm hakları saklı olup Üsküdar Amerikan Lisesine aittir.")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0")
+    if title
+      title #{title}
+    else
+      title UAA HeForShe
+    link(href="https://fonts.googleapis.com/css?family=Manrope:100,200,300,400,500,600,700,800,900" rel="stylesheet")
+    if includes && includes.external
+      if includes.external.css
+        each file_name in includes.external.css
+          if file_name == 'page'
+            link(rel='stylesheet' href=`/css/${page}.css`)
+          else if file_name == 'fontawesome'
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+          else
+            link(rel='stylesheet' href=`/css/general/${file_name}.css`)
+      if includes.external.js
+        each file_name in includes.external.js
+          if file_name == 'page'
+            script(src=`/js/${page}.js`)
+          else
+            script(src=`/js/functions/${file_name}.js`)
+  body
+    .all-wrapper
+      .all-header-wrapper
+        .header-wrapper-upper
+          .header-wrapper-left-section
+            a(href="/").heforshe-main-logo
+            a(href="https://uaa.k12.tr").uaa-logo
+          .header-wrapper-right-section
+            .language-switch-section#language-switch-section
+              .turkish-switch-option#turkish-switch-option TR
+              .english-switch-option(style="display:none")#english-switch-option EN
+            a(href="https://un.org").un-logo
+            a(href="https://un.org").sdg-logo
+        .header-wrapper-lower
+          a(href="/").each-menu-item Home
+          span 
+          a(href="/club").each-menu-item Club
+          span 
+          a(href="/this_week").each-menu-item This Week 
+          span 
+          a(href="/projects").each-menu-item Projects
+          span 
+          a(href="/more").each-menu-item More
+      .all-inner-wrapper
+        block content
+      .all-footer-wrapper
+        .footer-wrapper-upper
+          .footer-upper-first
+            .heforshe-main-logo(style="width:400px; height:100px")
+            .heforshe-main-description 
+              font(color="rgba(0, 0, 0, 0.69)") • UN:HeForShe 
+              br 
+              div found in 2014, 
+              div New York
+            .foundation-goals
+              .foundation-goals-title THE FOUNDATION
+              .foundation-goals-list
+                .each-foundation-goal 
+                  span &#8594;
+                  a(href="https://heforshe.org") What is HeForShe
+                .each-foundation-goal 
+                  span &#8594; 
+                  a(href="https://heforshe.org") HeForShe’s missions
+                .each-foundation-goal 
+                  span &#8594; 
+                  a(href="https://heforshe.org") HeForShe’s original website
+              
+          .footer-upper-second
+            .foundation-goals-title(style="margin-bottom:30px") GET INVOLVED
+            .foundation-goals-list
+                .each-foundation-goal(style="margin-bottom:50px")
+                  span &#8594;
+                .each-foundation-goal(style="margin-bottom:50px")
+                  span &#8594; 
+                .each-foundation-goal(style="margin-bottom:50px")
+                  span &#8594;
+                .each-foundation-goal(style="margin-bottom:50px")
+                  span &#8594;
+          .footer-upper-third
+            .foundation-goals-title(style="margin-bottom:30px") CONTACT INFORMATION
+            .foundation-goals-list
+                .each-contact-subcluster 
+                  .account-title-cluster
+                    span &#8594; 
+                    div(style="width:200px") E-mail Adresses
+                  .account-names-heforshe
+                    a • 
+                    a • 
+                .each-contact-subcluster 
+                  .account-title-cluster
+                    span &#8594; 
+                    div(style="width:200px") Original and UAA HeForShe Instagram Acounts
+                  .account-names-heforshe
+                    a • @uaaheforshe
+                    a • @heforshe 
+        .footer-wrapper-lower
+          .slogan-text
+            span Allyship Requires 
+            span(style="color:#d80059") Action
+            span !
+          .copyright-text(style="color:rgba(0, 0, 0, 0.5)") UAA HeForShe Club made this website
